@@ -35,7 +35,8 @@ class Slider extends Component {
     onChange: PropTypes.func,
     className: PropTypes.string,
     reverse: PropTypes.bool,
-    labels: PropTypes.object
+    labels: PropTypes.object,
+    showTicks: PropTypes.boolean
   }
 
   static defaultProps = {
@@ -45,7 +46,8 @@ class Slider extends Component {
     value: 0,
     orientation: 'horizontal',
     reverse: false,
-    labels: {}
+    labels: {},
+    showTicks: false
   }
 
   constructor (props, context) {
