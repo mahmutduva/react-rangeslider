@@ -282,6 +282,9 @@ class Slider extends Component {
         <div
           className='rangeslider__fill'
           style={fillStyle} />
+        <ul className='rangeslider__ticks'>
+          <li className='rangeslider__tick'/>
+        </ul>  
 
         <div
           ref={(sh) => { this.handle = sh }}
